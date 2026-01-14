@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background: #12131a;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(-150px,-100px);
+    background: linear-gradient(90deg, #0099ff, #f3f5f5);
+}
+
+section::after{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(150px,100px);
+    background: linear-gradient(90deg, #0099ff, #f3f5f5);
+}
+.container {
+    height: 225px;
+    width: 375px;
+    position: relative;
+    z-index: 1;
+}
+
+.container .card {
+    height:100%;
+    width: 100%;
+    padding: 25px;
+    border-radius: 25px;
+    color: white;
+    backdrop-filter: blur(35px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 50, 0.37);
+}
+.front-page header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.front-page .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+.front-page .logo img {
+    width: 48px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.front-page header img {
+    width: 48px;
+    object-fit: cover;
+}
+h6 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #d1d1d1;
+    margin-bottom: 4px;
+}
+h5 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+    align-items: flex-end;
+
+}
+.number {
+    margin-top: 18px;
+}
